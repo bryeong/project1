@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+<main>
+
+    <div>
+        <h2><a href="">회원가입</a></h2>
+    </div>
+    <div class="input-wrapping">
+        <div>
+            <label for="user-id">
+                <span>아이디</span>
+                <input type="text" id="user-id">
+            </label>
+        </div>
+        <div>
+            <label for="user-pw1">
+                <span>비밀번호</span>
+                <input type="text" id="user-pw1">
+          </label>
+        </div>
+        <div>
+            <label for="user-pw2">
+                <span>비밀번호 확인</span>
+                <input type="text" id="user-pw2">
+          </label>
+        </div>
+        <div>
+            <label for="user-name">
+                <span>이름</span>
+                <input type="text" id="user-name">
+            </label>
+            <div id="user-sex">
+                <input type="button" value="남">
+                <input type="button" value="여">
+            </div>
+        </div>
+        <div>
+            <label for="user-addr">
+                <span>주소</span>
+            </label>
+            <input type="text" id="user-addr">
+            <a href="">우편번호</a>
+            <input type="text" placeholder="나머지 주소">
+        </div>
+        <div>
+            <span>전화번호</span>
+            <div>
+                <select>
+                    <option value="-">선택</option>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                    <option value="019">019</option>
+                </select> -
+                <input type="text">
+                -
+                <input type="text">
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

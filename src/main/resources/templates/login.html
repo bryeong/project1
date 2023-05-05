@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+<main>
+    <div class="login-con">
+        <div class="title-con">
+            <h2>로그인<img src=""></h2>
+        </div>
+        <!-- 입력받는 부분 -->
+        <form action="/" method="get" id="input-con">
+            <div class="user-input-con">
+                <input type="text" name="id" id="userId"
+                       autocomplete="off" required>
+                <label for="userId">ID</label>
+            </div>
+            <div class="user-input-con">
+            <input type="password" name="pw" id="userPw"
+                       autocomplete="off" required>
+                <label for="userPw">PW</label>
+            </div>
+            <div class="auto-login">
+                <input type="checkbox" id="remember-id">
+                <label for="remember-id">아이디 저장</label>
+            </div>
+            <div class="login-btn">
+                <button type="submit" class="login">로그인</button>
+            </div>
+
+        </form>
+        <div class="other-page">
+            <ul>
+                <li><a href="#">아이디 찾기</a></li>
+                <li><a href="#">비밀번호 찾기</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="other-login">
+            <span class="side-bar left-bar"></span>
+            <p>다른 로그인</p>
+            <span class="side-bar right-bar"></span>
+            <ul>
+                <div class="login-ikon">
+                    <li><a href=""><img src="../static/imgs/네이버 AI-04.png"  alt="네이버로 로그인"></a></li>
+                </div>
+                <div class="login-ikon">
+                    <li><a href=""><img src="../static/imgs/카카오톡 LOGO-04.png" alt="카카오로 로그인"></a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</main>
+</body>
+</html>
