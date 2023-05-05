@@ -15,15 +15,13 @@
             <h2>로그인<img src=""></h2>
         </div>
         <!-- 입력받는 부분 -->
-        <form action="/" method="get" id="input-con">
+        <form action="/" method="get" id="input-con" autocomplete="off">
             <div class="user-input-con">
-                <input type="text" name="id" id="userId"
-                       autocomplete="off" required>
+                <input type="text" name="id" id="userId" required>
                 <label for="userId">ID</label>
             </div>
             <div class="user-input-con">
-            <input type="password" name="pw" id="userPw"
-                       autocomplete="off" required>
+            <input type="password" name="pw" id="userPw" required>
                 <label for="userPw">PW</label>
             </div>
             <div class="auto-login">
@@ -33,7 +31,6 @@
             <div class="login-btn">
                 <button type="submit" class="login">로그인</button>
             </div>
-
         </form>
         <div class="other-page">
             <ul>
